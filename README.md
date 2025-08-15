@@ -1,5 +1,25 @@
 Olá, eu sou o Pedro (@pefalne) 👋
+<p align="left"> <img src="https://komarev.com/ghpvc/?username=pefalne&label=PROFILE+VIEWS&color=blueviolet&style=flat" alt="pefalne" /> </p>
+
 Sou um desenvolvedor apaixonado por aprender e construir soluções em público. Atualmente, estou focado em aprofundar meus conhecimentos em administração enquanto documento minha jornada criando um SaaS.
+
+<p align="center">
+<a href="https://github.com/pefalne">
+<img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=pefalne&layout=compact&theme=dracula&hide_border=true&langs_count=6" />
+</a>
+<a href="https://github.com/pefalne">
+<img align="center" src="https://github-readme-stats.vercel.app/api?username=pefalne&show_icons=true&theme=dracula&hide_border=true&count_private=true" />
+</a>
+<a href="https://github.com/pefalne">
+<img align="center" src="https://github-profile-trophy.vercel.app/?username=pefalne&theme=dracula&no-frame=true&no-bg=true&margin-w=4" />
+</a>
+</p>
+
+<p align="center">
+<a href="https://github.com/pefalne">
+<img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=pefalne&theme=dracula&hide_border=true" />
+</a>
+</p>
 
 🛠️ Tecnologias e Ferramentas
 Aqui estão algumas das tecnologias com as quais tenho trabalhado:
