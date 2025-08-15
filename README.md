@@ -1,14 +1,6 @@
 Olá, eu sou o Pedro (@pefalne) 👋
 Sou um desenvolvedor apaixonado por aprender e construir soluções em público. Atualmente, estou focado em aprofundar meus conhecimentos em administração enquanto documento minha jornada criando um SaaS.
 
-🌱 Estou aprendendo sobre Administração e Gestão de Projetos.
-
-💞️ Busco colaborar em projetos de pesquisa e desenvolvimento humano.
-
-📫 Você pode me encontrar e acompanhar meu trabalho no meu site: www.pefalne.com
-
-😄 Pronomes: Ele/Dele
-
 🛠️ Tecnologias e Ferramentas
 Aqui estão algumas das tecnologias com as quais tenho trabalhado:
 
