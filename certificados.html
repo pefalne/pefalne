@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Certificados | Pedro Alves</title>
+
+  <meta name="description" content="Portfólio de Pedro Francisco Alves Neto - Desenvolvedor Full-Stack, Designer e Filmmaker de Caruaru, PE.">
+  <meta name="keywords" content="Pedro Alves, Desenvolvedor, Full-Stack, Designer, Fotógrafo, Caruaru, PE, CodeAlves, Pedro Alves Studio">
+  <meta name="author" content="Pedro Francisco Alves Neto">
+  <meta property="og:title" content="Pedro Alves | Desenvolvedor & Designer">
+  <meta property="og:description" content="Portfólio de Pedro Francisco Alves Neto - Desenvolvedor Full-Stack, Designer e Filmmaker.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.codealves.com.br/">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48cmVjdCB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgcng9IjE1IiBmaWxsPSIjM0I4MkY2Ii8+PHRleHQgeD0iNTAlIiB5PSI1NCUiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSI0NSIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiNmZmZmZmYiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGRvbWluYW50LWJhc2VsaW5lPSJtaWRkbGUiPlBBPC90ZXh0Pjwvc3ZnPg==">
+
+    <link rel="stylesheet" href="css/style.css">
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  
+  <style>
+    .certificados-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 2rem;
+      padding: 1rem 0;
+    }
+    
+    .certificado-card {
+      background: var(--glass-bg);
+      border: 1px solid var(--glass-border);
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: var(--glass-shadow);
+      transition: var(--transition);
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .certificado-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+    }
+    
+    .certificado-img-wrapper {
+      width: 100%;
+      height: 220px;
+      overflow: hidden;
+      background: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .certificado-img-wrapper img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: top;
+      /* Anti-download measures */
+      pointer-events: none;
+      -webkit-user-drag: none;
+      user-select: none;
+      -moz-user-select: none;
+      -webkit-user-select: none;
+      -ms-user-select: none;
+    }
+    
+    .certificado-info {
+      padding: 1.2rem;
+      flex-grow: 1;
+      display: flex;
+      align-items: center;
+    }
+    
+    .certificado-info h3 {
+      font-size: 1rem;
+      line-height: 1.4;
+      font-family: var(--font-sans);
+      font-weight: 600;
+      color: var(--text-main);
+    }
+    
+    /* Anti-right click for whole page */
+    body {
+      -webkit-touch-callout: none;
+    }
+  </style>
+</head>
+<body oncontextmenu="return false;">
+  
+  <div class="noise-overlay"></div>
+
+  <header class="header">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">Pedro<span>Alves</span></a>
+      <button class="menu-toggle" aria-label="Abrir Menu">☰</button>
+      <nav class="nav-links">
+        <a href="index.html">Início</a>
+        <a href="sobre.html">Sobre Mim</a>
+        <a href="experiencia.html">Experiência</a>
+        <a href="formacao_projetos.html">Formação & Projetos</a>
+        <a href="certificados.html" class="active">Certificados</a>
+        <a href="contato.html" class="btn-primary" style="color:white; margin-left: 1rem;">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="page-header">
+    <div class="container">
+      <h1>Certificados</h1>
+      <p>Cursos e especializações concluídas ao longo da minha trajetória.</p>
+    </div>
+  </div>
+
+  <main class="container section" style="padding-top: 0;">
+    <div class="certificados-grid" id="certificados-container">
+          </div>
+  </main>
+
+  <footer id="footer" class="footer">
+    <div class="container">
+      <h2>Vamos trabalhar juntos?</h2>
+      <p style="font-size: 1.2rem; color: var(--text-main); margin-bottom: 2rem;">
+        Entre em contato: <a href="mailto:pedroalves.studio@gmail.com" style="color: var(--accent-color); font-weight: 600;">pedroalves.studio@gmail.com</a>
+      </p>
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/pefalne/" class="social-link" target="_blank">LinkedIn</a>
+        <a href="https://github.com/pefalne" class="social-link" target="_blank">GitHub</a>
+        <a href="https://www.instagram.com/pefalne/" class="social-link" target="_blank">Instagram</a>
+      </div>
+      <p style="font-size: 0.9rem; color: var(--text-muted);">&copy; <script>document.write(new Date().getFullYear())</script> Pedro Alves.</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.4.120/pdf.min.js"></script>
+  <script>
+    // List of certificates
+    const certs = [
+      "Bootcamps DIO - Desafios de Código",
+      "Bootcamps DIO - Educação e Empregabilidade",
+      "Bootcamps DIO - Educação",
+      "Bootcamps DIO - Logico e Pensamento Computacional",
+      "CPQ - Básico - Universidade Ploomes",
+      "CPQ - Design de Documentos - Universidade Ploomes",
+      "Certificado - Administrando Bancos de Dados - Fundação Bradesco",
+      "Certificado - Atendimento ao Publico - Fundação Bradesco",
+      "Certificado - Azure - Escola do Trabalhador",
+      "Certificado - Desenvolvimento de Sistemas Web - CSS e HTML - FGV",
+      "Certificado - Dev Start - TOTVS",
+      "Certificado - Fluig Express - TOTVS",
+      "Certificado - Gestão Ágil com Scrum - UDEMY",
+      "Certificado - Implementando Banco de Dados - Fundação Bradesco",
+      "Certificado - Informática Básica - MUNDI IFSUL",
+      "Certificado - Introdução ao Git e GitHub - FGV",
+      "Certificado - Introdução à Inteligência Artificial - FGV",
+      "Certificado - Introdução à Programação Orientada a POO - Fundação Bradesco",
+      "Certificado - Modelagem de Dados - Fundação Bradesco",
+      "Certificado - Outras Ferramentas para Uso Didático - Ampliando as Possibilidades da IA em Sala de Aula - FGV",
+      "Certificado - Princípios da Ética na Era da Inteligência Artificial - FGV",
+      "Certificado - Segurança Digital - FGV",
+      "Certificado - Soft Skills - Prime Cursos",
+      "Certificado - Ética em IA - ENAP",
+      "Certificado Cisco - Exploring IoT with Cisco Packet Tracer",
+      "Certificado Cisco - Exploring Networking with Cisco Packet Tracer",
+      "Certificado Cisco - Getting Started with Cisco Packet Tracer",
+      "Certificado LGPD - Fundação Bradesco",
+      "Importação de Clientes e Contatos - Universidade Ploomes",
+      "Integração - Clicksign - Universidade Ploomes",
+      "Integração - Facebook Lead Ads - Universidade Ploomes",
+      "Integração - Whatsapp - Universidade Ploomes",
+      "Seminário de Gestão do Agreste II - IEL",
+      "Usabilidade Geral - Mobile - Universidade Ploomes",
+      "Usabilidade Geral - Web - Universidade Ploomes"
+    ];
+
+    const container = document.getElementById('certificados-container');
+    
+    // Set up PDF.js worker
+    pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.4.120/pdf.worker.min.js';
+    
+    const observer = new IntersectionObserver((entries, obs) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const card = entry.target;
+          const cert = card.dataset.cert;
+          const wrapperId = card.dataset.wrapperId;
+          
+          if (!cert) return;
+          
+          // Stop observing this element so we only load it once
+          obs.unobserve(card);
+          
+          const url = `Certificados/${encodeURIComponent(cert)}.pdf`;
+          
+          // Load PDF
+          pdfjsLib.getDocument(url).promise.then(pdf => {
+            return pdf.getPage(1);
+          }).then(page => {
+            const viewport = page.getViewport({ scale: 1.0 });
+            const canvas = document.createElement('canvas');
+            const ctx = canvas.getContext('2d');
+            
+            // Calculate scale to fit width
+            const desiredWidth = 400;
+            const scale = desiredWidth / viewport.width;
+            const scaledViewport = page.getViewport({ scale: scale });
+            
+            canvas.width = scaledViewport.width;
+            canvas.height = scaledViewport.height;
+            
+            // Anti-download styles for canvas
+            canvas.style.width = '100%';
+            canvas.style.height = '100%';
+            canvas.style.objectFit = 'cover';
+            canvas.style.objectPosition = 'top';
+            canvas.style.pointerEvents = 'none';
+            
+            const renderContext = {
+              canvasContext: ctx,
+              viewport: scaledViewport
+            };
+            
+            page.render(renderContext).promise.then(() => {
+              const wrapper = document.getElementById(wrapperId);
+              if(wrapper) {
+                wrapper.innerHTML = '';
+                wrapper.appendChild(canvas);
+              }
+            });
+          }).catch(err => {
+            console.error('Error loading PDF ' + cert, err);
+            const wrapper = document.getElementById(wrapperId);
+            if(wrapper) {
+              wrapper.innerHTML = '<div style="color: red; padding: 20px; text-align: center;">Erro ao carregar</div>';
+            }
+          });
+        }
+      });
+    }, {
+      rootMargin: '100px 0px', // Load slightly before it comes into view
+      threshold: 0.1
+    });
+
+    certs.forEach((cert) => {
+      const card = document.createElement('div');
+      card.className = 'certificado-card gsap-fade-up';
+      
+      const cleanName = cert.replace('Certificado - ', '').replace('.pdf', '');
+      const wrapperId = `wrapper-${cleanName.replace(/\s+/g, '-').replace(/[^a-zA-Z0-9-]/g, '')}`;
+      
+      card.dataset.cert = cert;
+      card.dataset.wrapperId = wrapperId;
+      
+      card.innerHTML = `
+        <div class="certificado-img-wrapper" id="${wrapperId}">
+          <div class="loading-spinner" style="padding: 20px; color: var(--text-muted); font-size: 0.9rem;">Carregando...</div>
+        </div>
+        <div class="certificado-info">
+          <h3>${cleanName}</h3>
+        </div>
+      `;
+      container.appendChild(card);
+      
+      // Observe the card for lazy loading
+      observer.observe(card);
+    });
+  </script>
+</body>
+</html>
