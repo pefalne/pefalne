@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-  // Mobile Menu
+
   const menuToggle = document.querySelector('.menu-toggle');
   const navLinks = document.querySelector('.nav-links');
 
@@ -9,7 +9,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // Active Link logic
   const currentPath = window.location.pathname.split('/').pop();
   const links = document.querySelectorAll('.nav-links a');
   
@@ -20,7 +19,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  // Header Scroll Effect
   const header = document.querySelector('.header');
   window.addEventListener('scroll', () => {
     if (window.scrollY > 50) {
@@ -30,16 +28,13 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  // GSAP Animations (Wait for elements to render)
   setTimeout(() => {
     if (typeof gsap !== 'undefined') {
-      
-      // Register ScrollTrigger if available
+
       if (typeof ScrollTrigger !== 'undefined') {
         gsap.registerPlugin(ScrollTrigger);
       }
 
-      // Hero Elements Animation
       if (document.querySelector('.hero-title')) {
         const tl = gsap.timeline();
         tl.from('.hero-subtitle', { y: 30, opacity: 0, duration: 1, ease: 'power3.out' })
@@ -49,13 +44,11 @@ document.addEventListener('DOMContentLoaded', () => {
           .from('.img-wrapper', { scale: 0.8, opacity: 0, rotationY: -15, duration: 1.5, ease: 'power3.out' }, '-=1');
       }
 
-      // Page Header Animation
       if (document.querySelector('.page-header h1')) {
         gsap.from('.page-header h1', { y: 50, opacity: 0, duration: 1, ease: 'power3.out', delay: 0.2 });
         gsap.from('.page-header p', { y: 30, opacity: 0, duration: 1, ease: 'power3.out', delay: 0.4 });
       }
 
-      // Fade up elements with ScrollTrigger
       if (typeof ScrollTrigger !== 'undefined') {
         const fadeUps = document.querySelectorAll('.gsap-fade-up');
         fadeUps.forEach((el) => {
@@ -75,7 +68,6 @@ document.addEventListener('DOMContentLoaded', () => {
           );
         });
 
-        // Image Tilt effect on mousemove for Hero Image
         const heroImg = document.querySelector('.img-wrapper');
         if (heroImg) {
           heroImg.addEventListener('mousemove', (e) => {
@@ -95,7 +87,7 @@ document.addEventListener('DOMContentLoaded', () => {
           });
         }
       } else {
-        // Fallback if ScrollTrigger fails
+
         const fadeUps = document.querySelectorAll('.gsap-fade-up');
         fadeUps.forEach(el => {
           el.style.opacity = '1';
