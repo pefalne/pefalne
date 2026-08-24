@@ -65,7 +65,7 @@ O site foi desenvolvido do zero focado em performance e em uma identidade visual
 - **HTML5 e CSS3 (Vanilla)** com variáveis customizadas para um tema Pastel/Azul e efeito Glassmorphism.
 - **Vanilla JavaScript** para interações e manipulação do DOM.
 - **GSAP & ScrollTrigger** para animações imersivas ao rolar a página.
-- **PDF.js** em conjunto com a API *IntersectionObserver (Lazy Loading)* para renderizar mais de 30 certificados com carregamento instantâneo e sem gargalos de memória.
+- **PDF.js** em conjunto com a API *IntersectionObserver (Lazy Loading)* para renderizar mais de 40 certificados com carregamento instantâneo e sem gargalos de memória.
 
 ## 📫 Onde me encontrar
 
